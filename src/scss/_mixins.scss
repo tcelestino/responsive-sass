@@ -1,0 +1,37 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @content;
+    }
+  }
+ 
+  @else if $breakpoint == "medium" {
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+      @content;
+    }
+  }
+ 
+  @else if $breakpoint == "large" {
+    @media only screen  and (min-width : 1224px) {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden; 
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// convert px to em
+@function em($px, $base: 13px) {
+  @return ($px / $base) * 1em;
+}

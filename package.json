@@ -1,0 +1,9 @@
+{
+  "name": "responsive-sass",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-compass": "^1.1.9",
+    "gulp-livereload": "^2.0.0"
+  }
+}
