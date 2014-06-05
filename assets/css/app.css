@@ -8,43 +8,26 @@
   /* line 7, ../src/scss/mobile/_small.scss */
   .top .menu {
     width: 100%;
+    background: #efefee;
   }
   /* line 10, ../src/scss/mobile/_small.scss */
-  .top .menu-mobile {
-    color: #fff;
-    display: block;
-    font-size: 1.38462em;
-    font-weight: 200;
-    margin: 0 auto;
-    padding: 5px;
-    position: relative;
+  .top .menu .menu-items {
+    padding-left: 3px;
     text-align: center;
-    text-transform: uppercase;
-    width: 7.69231em;
   }
-  /* line 22, ../src/scss/mobile/_small.scss */
-  .top .menu-mobile .fills,
-  .top .menu-mobile .fill {
-    width: 1.53846em;
+  /* line 14, ../src/scss/mobile/_small.scss */
+  .top .menu li {
+    font-size: 0.84615em;
+    margin-right: 0.38462em;
   }
-  /* line 25, ../src/scss/mobile/_small.scss */
-  .top .menu-mobile .fills {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 16px 0px 0px 10px;
+  /* line 18, ../src/scss/mobile/_small.scss */
+  .top .menu a {
+    padding: 8px 2px;
+    color: #000;
   }
-  /* line 31, ../src/scss/mobile/_small.scss */
-  .top .menu-mobile .fill {
-    background: #fff;
-    display: block;
-    height: 2px;
-    margin-bottom: 2px;
-    width: 1.15385em;
-  }
-  /* line 39, ../src/scss/mobile/_small.scss */
-  .top .menu-items {
-    display: none;
+  /* line 21, ../src/scss/mobile/_small.scss */
+  .top .menu a:hover {
+    color: #999;
   }
 }
 /* line 8, ../src/scss/app.scss */
@@ -92,15 +75,10 @@ body a {
 }
 
 /* line 41, ../src/scss/app.scss */
-.menu,
-.menu ul {
-  float: left;
-}
-
-/* line 46, ../src/scss/app.scss */
 .top .content-top {
   zoom: 1;
   background: #000;
+  margin-bottom: 30px;
 }
 /* line 23, ../src/scss/_mixins.scss */
 .top .content-top:before, .top .content-top:after {
@@ -113,31 +91,34 @@ body a {
 .top .content-top:after {
   clear: both;
 }
-/* line 50, ../src/scss/app.scss */
+/* line 46, ../src/scss/app.scss */
 .top h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 53, ../src/scss/app.scss */
+/* line 49, ../src/scss/app.scss */
 .top h1 a {
   color: #fff;
 }
-/* line 59, ../src/scss/app.scss */
+/* line 54, ../src/scss/app.scss */
+.top .menu li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+/* line 57, ../src/scss/app.scss */
+.top .menu li:last-child {
+  margin-right: 0;
+}
+/* line 60, ../src/scss/app.scss */
 .top .menu li a {
   display: block;
-  color: #fff;
-  -webkit-transition: background 0.6s ease-in-out;
-  -moz-transition: background 0.6s ease-in-out;
-  -o-transition: background 0.6s ease-in-out;
-  transition: background 0.6s ease-in-out;
-}
-/* line 63, ../src/scss/app.scss */
-.top .menu li a:hover {
-  background: #fff;
-  color: #000;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
-/* line 72, ../src/scss/app.scss */
+/* line 68, ../src/scss/app.scss */
 .main {
   zoom: 1;
 }

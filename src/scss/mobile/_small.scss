@@ -6,38 +6,22 @@
     }
     .menu {
       width: 100%;
-    }
-    .menu-mobile {
-      color: #fff;
-      display: block;
-      font-size: em(18px);
-      font-weight: 200;
-      margin: 0 auto;
-      padding: 5px;
-      position: relative;
-      text-align: center;
-      text-transform: uppercase;
-      width: em(100px);
-      .fills,
-      .fill {
-        width: em(20px);
+      background: #efefee;
+      .menu-items {
+        padding-left: 3px;
+        text-align: center;
       }
-      .fills {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 16px 0px 0px 10px;
+      li {
+        font-size: em(11px);
+        margin-right: em(5px);
       }
-      .fill {
-        background: #fff;
-        display: block;
-        height: 2px;
-        margin-bottom: 2px;
-        width: em(15px);
+      a {
+        padding: 8px 2px;
+        color: #000;
+        &:hover {
+          color: #999;
+        }
       }
-    }
-    .menu-items {
-      display: none;
     }
   }
 }

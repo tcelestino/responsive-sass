@@ -37,15 +37,11 @@ body {
   margin: 0 auto;
 }
 
-.menu,
-.menu ul {
-  float: left;
-}
-
 .top {
   .content-top {
     @include clearfix;
     background: #000;
+    margin-bottom: 30px;
   }
   h1 {
     text-transform: uppercase;
@@ -56,14 +52,14 @@ body {
   }
   .menu {
     li {
+      display: inline-block;
+      text-transform: uppercase;
+      &:last-child {
+        margin-right: 0;
+      }
       a {
         display: block;
-        color: #fff;
-        @include single-transition(background, 0.6s, ease-in-out);
-        &:hover {
-          background: #fff;
-          color: #000;
-        }
+        @include single-transition(all, 0.6s, ease-in-out);
       }
     }
    
